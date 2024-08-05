@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORM REGISTER</title>
+    <link rel="stylesheet" href="css/regis.css" />
+  </head>
+  <body>
+    <form>
+        <h1>แบบฟอร์มลงทะเบียน</h1>
+      <table border="2" width="400px">
+        <tr style="text-align: center">
+          <td>Info</td>
+          <td>User</td>
+        </tr>
+        <tr>
+          <td><label>First name:</label></td>
+          <td><input type="text" id="" /></td>
+        </tr>
+        <tr>
+          <td><label for="lname">Last name:</label></td>
+          <td><input type="text" /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password" /></td>
+        </tr>
+        <tr>
+          <td><label for="phone">Phone:</label></td>
+          <td><input type="tel" /></td>
+        </tr>
+        <tr>
+          <td><label for="bd">Birthday:</label></td>
+          <td><input type="date" /></td>
+        </tr>
+        <tr>
+          <td><label for="favcolor">Favorite Color:</label></td>
+          <td><input type="color" /></td>
+        </tr>
+        <tr>
+          <td><label for="height">Height:</label></td>
+          <td><input type="number" /> CM.</td>
+        </tr>
+        <tr>
+          <td><label for="weight">Weight:</label></td>
+          <td><input type="number" /> KG.</td>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td><label for="img">Images:</label></td>
+          <td><input type="file" /></td>
+        </tr>
+        <tr>
+          <td><label for="brc">Branch:</label></td>
+          <td>
+            <select name="branch" id="" required>
+              <option value="">Choose...</option>
+              <option value="1">IT</option>
+              <option value="2">ITI</option>
+              <option value="3">INE</option>
+              <option value="4">INET</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="favfood">Fav Food:</label></td>
+          <td>
+            <input type="checkbox" name="food1" value="ham" /> ham
+            <input type="checkbox" name="food2" value="rice" /> rice
+            <input type="checkbox" name="food3" value="steak" /> steak
+          </td>
+        </tr>
+        <tr>
+          <td><label for="address">Address Now:</label></td>
+          <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+        </tr>
+        <tr>
+          <td><label for="year">Year:</label></td>
+         <td>
+            <select name="year" id="">
+                <option value="1">ปี 1</option>
+                <option value="2">ปี 2</option>
+                <option value="3">ปี 3</option>
+                <option value="4">ปี 4</option>
+            </select>
+         </td>
+        </tr>
+        <tr>
+          <td><label for="conf">Confirm:</label></td>
+          <td>
+            <input type="submit" value="OK" />
+            <input type="reset" value="Cancel" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+
+  <!-- <script>
+    function validateForm() {
+        var firstName = document.getElementById("firstName").value.trim();
+        var lastName = document.getElementById("lastName").value.trim();
+        var email = document.getElementById("email").value.trim();
+        var password = document.getElementById("password").value.trim();
+        var phone = document.getElementById("phone").value.trim();
+
+        if (firstName === "" || lastName === "" || email === "" || password === "" || phone === "") {
+            alert("กรุณากรอกข้อมูลให้ครบถ้วน");
+            return false;
+        }
+
+        if (!validateEmail(email)) {
+            alert("รูปแบบอีเมลไม่ถูกต้อง");
+            return false;
+        }
+
+        // ตรวจสอบรูปแบบของหมายเลขโทรศัพท์ (เช่น 0812345678)
+        if (!/^\d{10}$/.test(phone)) {
+            alert("รูปแบบหมายเลขโทรศัพท์ไม่ถูกต้อง");
+            return false;
+        }
+
+        alert("สำเร็จ");
+        return true;
+    }
+
+    function validateEmail(email) {
+        var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        return emailRegex.test(email);
+    }
+</script> -->
+</html>

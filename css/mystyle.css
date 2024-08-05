@@ -1,0 +1,31 @@
+div{
+    color: aqua;
+    font-family: monospace;
+    background-color: rgb(202, 118, 118);
+    width: 33%;
+    float: left;
+}
+
+h2{
+    color: rgb(0, 217, 255);
+}
+h3{
+    color: rgb(0, 17, 255);
+}
+
+/* css testcss.html */
+#para1 {
+    text-align: left;
+  }
+
+  #para2 {
+    text-align: right;
+  }
+
+  .red {
+    color: red;
+  }
+
+  .blue {
+    color: blue;
+  }
